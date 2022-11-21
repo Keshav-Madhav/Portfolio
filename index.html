@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <nav>
+
+                <div class="container head">
+                    <div class="logo">
+                        <img src="./IMG/LOGO.png" alt="Keshav Photo">
+                    </div>
+
+                    <div class="links">
+                        <ul>
+                            <li>
+                                <a href="#Home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#Services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#Port">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="#About">About</a>
+                            </li>
+                            <li>
+                                <a href="#Contact">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#Hire" class="active">Hire me</a>
+                            </li>
+                            <li class="scrollLi">
+                                <a class="active scroll">v</a>
+                            </li>
+                            <li class="checkLi">
+                                <input type="checkbox" class="active" id="mode">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+
+            </nav>
+        </header>
+
+        <section class="home" id="Home">
+
+            <div class="overlay">
+                <img src="/IMG/Map2.png" class="" alt="home Background">
+            </div>
+
+            <div class="header-content">
+                <img src="./IMG/LOGO.png" alt="Initials" class="letters">
+                <div class="container grid-2">
+                    <div class="column-1">
+                        <h1 class="header-title">Keshav Madhav</h1>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <a href="#" class="btn">Download CV</a>
+                    </div>
+                    <div class="column-2 image">
+                        <img src="./IMG/LOGO.png" class="img-element">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="services section" id="Services">
+            <div class="container">
+
+                <div class="section-header">
+                    <h3 class="title" data-title="What I Do" >Services</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, a.</p>
+                </div>
+
+                <div class="cards">
+                    <div class="card-wrap">
+                        <div class="card" data-card="Design">
+                            <div class="card-content">
+                                <img src="./IMG/LOGO.png" alt="What i do 1" class="icon">
+                                <h3 class="title-sm">Graphic Design</h3>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam
+                                    maiores soluta.</p>
+                                <a href="" class="btn small">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-wrap">
+                        <div class="card" data-card="Code">
+                            <div class="card-content">
+                                <img src="./IMG/LOGO.png" alt="What i do 2" class="icon">
+                                <h3 class="title-sm">Web Dev/Design</h3>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam
+                                    maiores soluta.</p>
+                                <a href="" class="btn small">Read More</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-wrap">
+                        <div class="card" data-card="Cam">
+                            <div class="card-content">
+                                <img src="./IMG/LOGO.png" alt="What i do 3" class="icon">
+                                <h3 class="title-sm">PhotoGraphy</h3>
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam
+                                    maiores soluta.</p>
+                                <a href="" class="btn small">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio section" id="Port">
+            <div class="background-bg">
+                <div class="overlay overlay-sm">
+                    <img src="" alt="Portfolio Background" class="">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="My works">Portfolio</h3>
+                </div>
+
+                <div class="section-body">
+                    <div class="filter">
+                        <button class="filter-btn active" data-filter="*">All</button>
+                        <button class="filter-btn" data-filter=".design">Graphic Design</button>
+                        <button class="filter-btn" data-filter=".webdev">Web-Dev</button>
+                        <button class="filter-btn" data-filter=".photo">Photography</button>
+                        <button class="filter-btn" data-filter=".photoshop">Photoshop</button>
+                    </div>
+
+                    <div class="grid">
+                        <div class="grid-item design">
+                            <div class="gallery-image">
+                                <img src="./IMG/LOGO.png" alt="Portfolio Image1">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Image1</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item design">
+                            <div class="gallery-image">
+                                <img src="./IMG/LOGO.png" alt="Portfolio Image2">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Image2</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item design">
+                            <div class="gallery-image">
+                                <img src="./IMG/LOGO.png" alt="Portfolio Image3">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Image3</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item design photoshop">
+                            <div class="gallery-image">
+                                <img src="./IMG/LOGO.png" alt="Portfolio Image4">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Image4</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item webdev">
+                            <div class="gallery-image">
+                                <img src="./IMG/LOGO.png" alt="Portfolio Image5">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Image5</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item photo">
+                            <div class="gallery-image">
+                                <img src="./IMG/LOGO.png" alt="Portfolio Image6">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Image6</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item photo photoshop">
+                            <div class="gallery-image">
+                                <img src="./IMG/LOGO.png" alt="Portfolio Image7">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Image7</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item photoshop">
+                            <div class="gallery-image">
+                                <img src="./IMG/LOGO.png" alt="Portfolio Image8">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Image8</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item photo">
+                            <div class="gallery-image">
+                                <img src="./IMG/LOGO.png" alt="Portfolio Image9">
+                                <div class="img-overlay">
+                                    <div class="plus"></div>
+                                    <div class="img-description">
+                                        <h3>Image9</h3>
+                                        <h5>View Demo</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-folio">
+                        <a href="#" class="btn">More Folio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section" id="About">
+            <div class="container">
+                <div class="section-header">
+                    <h3 class="title" data-title="Who Am I">About me</h3>
+                </div>
+                <div class="section-body grid-2">
+                    <div class="column-1">
+                        <h3 class="title-sm">Hello, I'm Keshav Madhav</h3>
+                        <p class="text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum magni cupiditate odit harum
+                            totam perspiciatis animi? Totam impedit debitis modi.
+                        </p>
+                        <div class="skills">
+                            <div class="skill html">
+                                <h3 class="skill-title">HTML+CSS+JS</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="73%"></div>
+                                </div>
+                            </div>
+                            <div class="skill design">
+                                <h3 class="skill-title">Graphic-Design/UI-UX</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="48%"></div>
+                                </div>
+                            </div>
+                            <div class="skill photo">
+                                <h3 class="skill-title">Photography+Photoshop</h3>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="63%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                    <div class="column-2 image">
+                        <img src="./IMG/LOGO.png" alt="Keshav Photo" class="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="records section" id="Record">
+            <div class="container">
+                <div class="wrap">
+                    <div class="record-circle">
+                        <h2 class="number" data-num="1500">0</h2>
+                        <h4 class="sub-title">Projects 1</h4>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="record-circle">
+                        <h2 class="number" data-num="100">0</h2>
+                        <h4 class="sub-title">Projects 2</h4>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="record-circle">
+                        <h2 class="number" data-num="100">0</h2>
+                        <h4 class="sub-title">Projects 3</h4>
+                    </div>
+                </div>
+
+                <div class="wrap">
+                    <div class="record-circle">
+                        <h2 class="number" data-num="100">0</h2>
+                        <h4 class="sub-title">Projects </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="Contact">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="contact-info">
+                        <h3 class="title">Get In Touch</h3>
+                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, facilis? Ipsum
+                            harum quidem error libero sapiente, corporis minus obcaecati quia, animi porro maiores vel
+                            nemo iste eligendi facere totam beatae.</p>
+                        <div class="information-wrap">
+
+                            <div class="information">
+                                <div class="contact-icon">
+                                    <i class="material-icons">local_phone</i>
+                                </div>
+                                <p class="info-text">+91 7827229447</p>
+                            </div>
+
+                            <div class="information">
+                                <div class="contact-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <p class="info-text">+91 7827229447</p>
+                            </div>
+
+                            <div class="information">
+                                <div class="contact-icon">
+                                    <i class="material-icons">mail_outline</i>
+                                </div>
+                                <p class="info-text">keshav2552003@gmail.com</p>
+                            </div>
+
+                            <div class="information">
+                                <div class="contact-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                                <p class="info-text">@killowatts</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <h3 class="title">Contact me</h3>
+                        <div class="row">
+                            <input type="text" class="contact-input" placeholder="First Name">
+                            <input type="text" class="contact-input" placeholder="Last Name">
+                        </div>
+                        <div class="row">
+                            <input type="text" class="contact-input" placeholder="Phone">
+                            <input type="email" class="contact-input" placeholder="Email">
+                        </div>
+                        <div class="row">
+                            <textarea name="message" class="contact-input textarea" placeholder="Message"></textarea>
+                        </div>
+                        <a href="#" class="btn">Send</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="hire section" id="Hire">
+            <div class="container">
+                <h3 class="title">Hire me for my services</h3>
+                <p class="text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto ipsam magni officia quis quae
+                    quidem! Minus deleniti voluptatibus non, officiis adipisci consequatur corrupti, necessitatibus cum
+                    repudiandae reprehenderit consectetur nemo! Magnam?
+                </p>
+                <a href="#" class="btn">Hire Me</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer section">
+        <div class="container">
+            <div class="grid-4">
+                <div class="grid-4-col footer-about">
+                    <h3 class="title-sm">About</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+
+                <div class="grid-4-col footer-links">
+                    <h3 class="title-sm">Links</h3>
+                    <ul>
+                        <li>
+                            <a href="#Home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#Services">Services</a>
+                        </li>
+                        <li>
+                            <a href="#Port">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#About">About</a>
+                        </li>
+                        <li>
+                            <a href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid-4-col footer-links">
+                    <h3 class="title-sm">Services</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Graphic Design</a>
+                        </li>
+                        <li>
+                            <a href="#">Web Development</a>
+                        </li>
+                        <li>
+                            <a href="#">Photography</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid-4-col footer-socials">
+                    <h3 class="title-sm">Follow me</h3>
+                    <div class="footer-media-wrap">
+                        <a href="#" class="text footer-media">WhatsApp</a>
+                        <a href="#" class="redirect">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                    <div class="footer-media-wrap">
+                        <a href="#" class="text footer-media">Instagram</a>
+                        <a href="#" class="redirect">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="footer-media-wrap">
+                        <a href="#" class="text footer-media">Facebook</a>
+                        <a href="#" class="redirect">
+                            <i class="material-icons">mail_outline</i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="grid-4-col back-btn-wrap">
+            <a href="#" class="back-btn">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./JS/isotope.pkgd.min.js"></script>
+    <script src="./JS/app.js"></script>
+</body>
+
+</html>
