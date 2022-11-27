@@ -90,10 +90,6 @@ const scroll_btn=document.querySelector(".scroll");
 function startScroll(){
     let id = setInterval(function(){
         window.scrollBy(0,10);
-        if(window.innerHeight + window.screenY==document.body.offsetHeight){
-            stopScroll();
-            paused=true;
-        }
     }, 20);
     return id
 }
@@ -142,3 +138,14 @@ toggle.addEventListener("click",()=>{
 })
 
 
+const ProgressBar=document.querySelector("#progressBar");
+document.addEventListener("scroll",scrollProgress);
+
+function scrollProgress(){
+    const webpageheight=document.body.scrollHeight;
+    const currentdist=document.documentElement.scrollTop;
+    const windowheight=document.documentElement.clientHeight;
+    const scrolledpercent= (currentdist/(webpageheight-windowheight))*100;
+
+    ProgressBar.style.width=scrolledpercent+"%";        
+}

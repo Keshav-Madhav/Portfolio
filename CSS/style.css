@@ -188,6 +188,15 @@ header:hover{
     box-shadow: 0px 0px 4px var(--underglow) inset, 0px 0px 50px var(--shadow);;
 }
 
+.progress-bar{
+    width: 0;
+    height: 4px;
+    background-color: var(--main-color);
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+}
+
 nav{
     width: 100%;
     position: relative;
