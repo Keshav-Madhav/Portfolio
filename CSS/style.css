@@ -242,6 +242,7 @@ nav .container{
     font-size: 1rem;
     padding: 0.9rem 2.1rem;
     margin-left: 1rem;
+    white-space: nowrap;
 }
 
 .links a:hover{
@@ -336,8 +337,7 @@ nav.open .links{
 .header-content .container.grid-2{
     grid-template-columns: 2.5fr 3.5fr;
     min-height: calc(100vh-6rem);
-    padding-bottom: 2.5rem;
-    padding: 7rem ;
+    padding-top: 7rem;
     text-align: left;
 }
 .header-content{
@@ -719,7 +719,12 @@ img-description{
 
 .about{
     overflow: hidden;
+}
 
+.about.section{
+    padding-top: 7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .about img{
@@ -780,9 +785,7 @@ img-description{
     line-height: 0;
 }
 
-.about.section{
-    padding: 2rem;
-}
+
 /*record*/
 
 .records{
@@ -1208,7 +1211,6 @@ footer{
 
     .header-content .container.grid-2{
         min-height: calc(100vh-4.5rem);
-        padding-bottom: 6rem;
     }
 
     .logo{
