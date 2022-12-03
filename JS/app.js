@@ -6,6 +6,7 @@ const records_wrap= document.querySelector(".records");
 const records_numbers = document.querySelectorAll(".number");
 
 
+
 const hamburger_menu=document.querySelector(".hamburger-menu");
 const navbar=document.querySelector("header nav");
 const links =document.querySelectorAll(".links a");
@@ -65,7 +66,10 @@ function skillsEffect(){
 }
 
 function countUp(){
-    if(!checkScroll(records_wrap)) return;
+    if(!checkScroll(records_wrap)){ 
+        return;
+    }
+    else{
     records_numbers.forEach((numb) => {
         const updateCount = () =>{
             let currentNum= +numb.innerText;
@@ -82,6 +86,9 @@ function countUp(){
         setTimeout(updateCount,500);
     })
 }
+}
+
+
 
 let scrollerId;
 let paused=true;

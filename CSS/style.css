@@ -4,20 +4,21 @@ body{
     --light-three:#ebecef;
     --dark-one: #333;
     --dark-two:#7a7a7a;
-    --main-color: #784cfb;/*  #784cfb   #0d8076   #39FF14   #7c0fc0   #8d173e*/
-    --dark-main: #5a36c6;/*  #5a36c6   #0a665e*/
+    --main-color: #6A097D;/* #6A097D  #784cfb   #0d8076   #39FF14   #7c0fc0   #8d173e*/
+    --dark-main: #530762;/*  #530762  #5a36c6   #0a665e*/
     --light-one: #fff;
     --light-tw0:#f3f5f7;
     --shadow:rgba(163, 162, 163, 0.95);
     --highlight:rgba(225, 223, 223, 0.5);
     --header:rgba(243, 238, 246, 0.95);
-    --Gallery:rgba(120,76,251,0.7);/*  rgba(120,76,251,0.7)   #0d80769d*/
-    --underglow:rgba(120,76,251,0.62);/*rgba(120,76,251,0.62)    #0d807662*/
+    --Gallery:#6a097d9d;/* #6a097d9d  rgba(120,76,251,0.7)   #0d80769d*/
+    --underglow:#6a097d62;/* #6a097d62  rgba(120,76,251,0.62)    #0d807662*/
 }
 
 body.Dark{
     --light-three:#0b0b0b;
     --dark-one: rgb(230, 230, 230);
+    --main-color: #F1D4D4;
     --dark-two:#d3d3d3;
     --light-one: rgb(18, 18, 18);
     --light-tw0:#151719;
@@ -340,6 +341,7 @@ nav.open .links{
     padding-top: 7rem;
     text-align: left;
 }
+
 .header-content{
     background-image: linear-gradient(var(--underglow), var(--light-one) 14%)
 }
@@ -451,12 +453,30 @@ nav.open .links{
     left:0;
 }
 
-.letters{
+.letter{
     position: absolute;
     width: 13.5%;
     top: 3.5rem;
     left: 25px;
     opacity: 1;
+    font-size: 200px;
+    transform: rotate(270deg);
+    display: inline;
+    font-weight: 40px;
+}
+
+.letterM{
+    display: inline-block;
+    animation: flip180 10s infinite 1s;
+}
+
+@keyframes flip180 {
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 .overlay{
@@ -478,7 +498,7 @@ html{
 .cards{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap;                    
     width: 100%;
 }
 
@@ -687,7 +707,7 @@ height: 8PX;
     transform: translate(-50%,-50%) rotate(-90deg);
 }
 
-img-description{
+.img-description{
     width: 100%;
 }
 
@@ -794,16 +814,6 @@ img-description{
     padding: 5.2rem 0;
 }
 
-@keyframes leftIn {
-    50% {background: var(--main-color); left: 0px; top: 0px;}
-    100% {background: var(--main-color); left: -1600px; top: 0px;}
-}
-
-@keyframes rightIn {
-    50% {background: var(--main-color); left: 0px; top: 0px;}
-    100% {background: var(--main-color); left: 1600px; top: 0px;}
-}
-
 .records .container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -812,11 +822,6 @@ img-description{
     text-align: center;
     grid-row: 2rem;
     grid-column-gap: 1.5rem;
-}
-
-.records .container {
-    animation: leftIn 5s 1;
-    animation-direction: reverse;
 }
 
 .record-circle{
@@ -868,13 +873,13 @@ img-description{
     top: 0;
     height: 40%;
     background: url("/IMG/map4.png") center center/cover;
-    background-image: linear-gradient(rgba(255, 255, 255, 0)90%, var(--underglow)),url("/IMG/map4.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0)90%, var(--underglow)),url("/IMG/Map2.png");
 }
 
 .contact:after{
     top: 40%;
     height: 60%;
-    background-image: linear-gradient(var(--underglow),rgba(255, 255, 255, 0)5%),url("/IMG/map2.png");
+    background-image: linear-gradient(var(--underglow),rgba(255, 255, 255, 0)5%),url("/IMG/map4.png");
 }
 
 .contact-box{
