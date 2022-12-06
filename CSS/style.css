@@ -468,21 +468,21 @@ nav.open .links{
     color: var(--dark-one);
 }
 
-.letterM{
+.initial{
     position: relative;
-    right: 65px;
+    right: 85px;
     display: inline-block;
-    animation: flip180 10s infinite 5s;
+    animation: flip180 20s infinite 5s;
 }
 
 @keyframes flip180 {
-    15%{
+    25%{
         transform: rotate(180deg);
     }
     50%{
         transform: rotate(180deg);
     }
-    65%{
+    75%{
         transform: rotate(360deg);
     }
     100%{
@@ -667,8 +667,8 @@ height: 8PX;
 
 .gallery-image img{
     position: absolute;
-    height: 115%;
-    width: initial;
+    height: 100%;
+    width: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -706,8 +706,8 @@ height: 8PX;
     content: "";
     position: absolute;
     width: 4.5rem;
-    height: 3px;
-    top: 50%;
+    height: 5px;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: var(--light-one);
@@ -883,14 +883,14 @@ height: 8PX;
 .contact:before{
     top: 0;
     height: 40%;
-    background: url("/IMG/map4.png") center center/cover;
-    background-image: linear-gradient(rgba(255, 255, 255, 0)90%, var(--underglow)),url("/IMG/Map2.png");
+    background: center center/cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0)90%, var(--underglow)),url("/IMG/Maps/Map\ White.png");
 }
 
 .contact:after{
     top: 40%;
     height: 60%;
-    background-image: linear-gradient(var(--underglow),rgba(255, 255, 255, 0)5%),url("/IMG/map4.png");
+    background-image: linear-gradient(var(--underglow),rgba(255, 255, 255, 0)10%),url("/IMG/Maps/Map\ Black.png");
 }
 
 .contact-box{
@@ -1442,7 +1442,14 @@ footer{
     }
 }
 
-@media (max-width: 850px) {
+@media (max-width:1050px) {
+    .container.head{
+        padding: 0 2rem;
+    }
+    
+}
+
+@media (max-width:820px) {
     .grid-2{
         grid-template-columns: 1fr !important;
     }
